@@ -1,0 +1,23 @@
+* SPICE3 file created from decoder_1bit.ext - technology: scmos
+
+M1000 vdd a a_0_0# vdd CMOSP w=15u l=2u
++  ad=280p pd=130u as=180p ps=84u
+M1001 a_0_0# b vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 vdd c a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1003 out a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1004 a_7_n57# a gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=120p ps=68u
+M1005 a_17_n57# b a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1006 a_0_0# c a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1007 out a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+C0 out gnd! 9.6fF
+C1 a_0_0# gnd! 26.9fF
+C2 c gnd! 15.2fF
+C3 b gnd! 13.9fF
+C4 a gnd! 12.4fF

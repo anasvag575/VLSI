@@ -1,0 +1,240 @@
+magic
+tech scmos
+timestamp 1577894809
+<< nwell >>
+rect -59 28 27 46
+<< polysilicon >>
+rect -53 36 -46 38
+rect -40 36 -26 38
+rect -20 36 -6 38
+rect 0 36 14 38
+rect 20 36 22 38
+rect -59 10 -52 12
+rect -59 -2 -52 0
+rect -59 -22 -52 -20
+rect -59 -34 -52 -32
+rect -59 -54 -52 -52
+rect -59 -66 -52 -64
+rect -59 -86 -52 -84
+rect -59 -98 -52 -96
+<< pdiffusion >>
+rect -46 39 -45 43
+rect -41 39 -40 43
+rect -46 38 -40 39
+rect -26 39 -25 43
+rect -21 39 -20 43
+rect -26 38 -20 39
+rect -6 39 -5 43
+rect -1 39 0 43
+rect -6 38 0 39
+rect 14 39 15 43
+rect 19 39 20 43
+rect 14 38 20 39
+rect -46 35 -40 36
+rect -46 31 -45 35
+rect -41 31 -40 35
+rect -26 35 -20 36
+rect -26 31 -25 35
+rect -21 31 -20 35
+rect -6 35 0 36
+rect -6 31 -5 35
+rect -1 31 0 35
+rect 14 35 20 36
+rect 14 31 15 35
+rect 19 31 20 35
+<< metal1 >>
+rect -46 39 -45 43
+rect -41 39 -25 43
+rect -21 39 -5 43
+rect -1 39 15 43
+rect 19 39 20 43
+rect -63 35 -57 39
+rect -63 7 -59 35
+rect -46 31 -45 35
+rect -41 31 -40 35
+rect -46 21 -40 31
+rect -26 31 -25 35
+rect -21 31 -20 35
+rect -26 19 -20 31
+rect -6 31 -5 35
+rect -1 31 0 35
+rect -6 21 0 31
+rect 14 31 15 35
+rect 19 31 20 35
+rect 14 21 20 31
+rect -63 3 -57 7
+rect -63 -25 -59 3
+rect -63 -29 -57 -25
+rect -63 -57 -59 -29
+rect -63 -61 -57 -57
+rect -63 -89 -59 -61
+rect -63 -93 -57 -89
+rect -46 -113 -40 -106
+rect -26 -113 -20 -106
+rect -6 -113 0 -106
+rect 14 -113 20 -106
+<< ptransistor >>
+rect -46 36 -40 38
+rect -26 36 -20 38
+rect -6 36 0 38
+rect 14 36 20 38
+<< polycontact >>
+rect -57 35 -53 39
+<< ndcontact >>
+rect -57 3 -53 7
+rect -57 -29 -53 -25
+rect -57 -61 -53 -57
+rect -57 -93 -53 -89
+<< pdcontact >>
+rect -45 39 -41 43
+rect -25 39 -21 43
+rect -5 39 -1 43
+rect 15 39 19 43
+rect -45 31 -41 35
+rect -25 31 -21 35
+rect -5 31 -1 35
+rect 15 31 19 35
+use rom_1bit  rom_1bit_0
+timestamp 1577879552
+transform 1 0 -32 0 1 7
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_1
+timestamp 1577879552
+transform 1 0 -12 0 1 7
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_2
+timestamp 1577879552
+transform 1 0 8 0 1 7
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_3
+timestamp 1577879552
+transform 1 0 28 0 1 7
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_4
+timestamp 1577879552
+transform -1 0 -54 0 -1 3
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_7
+timestamp 1577879552
+transform -1 0 -34 0 -1 3
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_6
+timestamp 1577879552
+transform -1 0 -14 0 -1 3
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_5
+timestamp 1577879552
+transform -1 0 6 0 -1 3
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_8
+timestamp 1577879552
+transform 1 0 -32 0 1 -25
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_9
+timestamp 1577879552
+transform 1 0 -12 0 1 -25
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_10
+timestamp 1577879552
+transform 1 0 8 0 1 -25
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_11
+timestamp 1577879552
+transform 1 0 28 0 1 -25
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_12
+timestamp 1577879552
+transform -1 0 -54 0 -1 -29
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_13
+timestamp 1577879552
+transform -1 0 -34 0 -1 -29
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_14
+timestamp 1577879552
+transform -1 0 -14 0 -1 -29
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_15
+timestamp 1577879552
+transform -1 0 6 0 -1 -29
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_16
+timestamp 1577879552
+transform 1 0 -32 0 1 -57
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_17
+timestamp 1577879552
+transform 1 0 -12 0 1 -57
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_18
+timestamp 1577879552
+transform 1 0 8 0 1 -57
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_19
+timestamp 1577879552
+transform 1 0 28 0 1 -57
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_20
+timestamp 1577879552
+transform -1 0 -54 0 -1 -61
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_21
+timestamp 1577879552
+transform -1 0 -34 0 -1 -61
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_22
+timestamp 1577879552
+transform -1 0 -14 0 -1 -61
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_23
+timestamp 1577879552
+transform -1 0 6 0 -1 -61
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_24
+timestamp 1577879552
+transform 1 0 -32 0 1 -89
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_25
+timestamp 1577879552
+transform 1 0 -12 0 1 -89
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_26
+timestamp 1577879552
+transform 1 0 8 0 1 -89
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_27
+timestamp 1577879552
+transform 1 0 28 0 1 -89
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_28
+timestamp 1577879552
+transform -1 0 -54 0 -1 -93
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_29
+timestamp 1577879552
+transform -1 0 -34 0 -1 -93
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_30
+timestamp 1577879552
+transform -1 0 -14 0 -1 -93
+box -21 -4 -1 14
+use rom_1bit  rom_1bit_31
+timestamp 1577879552
+transform -1 0 6 0 -1 -93
+box -21 -4 -1 14
+<< labels >>
+rlabel polysilicon -59 10 -59 12 3 wl0
+rlabel polysilicon -59 -2 -59 0 3 wl1
+rlabel polysilicon -59 -22 -59 -20 3 wl2
+rlabel polysilicon -59 -34 -59 -32 3 wl3
+rlabel polysilicon -59 -54 -59 -52 3 wl4
+rlabel polysilicon -59 -66 -59 -64 3 wl5
+rlabel polysilicon -59 -86 -59 -84 3 wl6
+rlabel polysilicon -59 -98 -59 -96 3 wl7
+rlabel metal1 -46 -113 -40 -113 1 bit0
+rlabel metal1 -26 -113 -20 -113 1 bit1
+rlabel metal1 -6 -113 0 -113 1 bit2
+rlabel metal1 20 39 20 43 5 vdd!
+rlabel metal1 -59 35 -59 39 3 gnd!
+rlabel metal1 14 -113 20 -113 1 bit3
+<< end >>

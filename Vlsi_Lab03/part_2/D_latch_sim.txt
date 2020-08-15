@@ -1,0 +1,45 @@
+*Dlatch sim file
+.INCLUDE "../MOSIS_025m.txt"
+
+.GLOBAL vdd
+
+*Inverter NODES Vin Vout
+.subckt inverter in out params: wnsize=3u wpsize=9u
+M1 out in vdd vdd CMOSP w=wpsize l=2u
+M2 out in 0 0 CMOSN w=wnsize l=2u
+.ends
+
+*Pass gate NODES en nen in out
+.subckt pass_gate en nen in out
+M1 out nen in vdd CMOSP w=18u l=2u
+M2 in en out 0 CMOSN w=6u l=2u
+.ends
+
+*Sram cell NODES in out
+.subckt sram in out
+xin_s in out inverter params: wnsize=9u wpsize=27u
+xin_w out in inverter params: wnsize=3u wpsize=9u
+.ends
+
+V1 vdd 0 DC 2.5
+Vd d 0 PULSE  (2.5 0 0n 0n 0n 32n 64n)
+vclk clk 0 PULSE  (2.5 0 0.2n 0.2n 0.2n 20n 40n)
+
+.ic v(dpass)=0v
+
+x_clk clk iclk inverter params: wnsize=3u wpsize=9u
+xin_buf d d1 inverter params: wnsize=9u wpsize=27u
+xpass iclk clk d1 dpass pass_gate
+xsram dpass q sram
+ 
+.TRAN 1p 100n
+
+*Setting up environment
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+.endc
+
+.end

@@ -1,0 +1,52 @@
+*Current NMOS characteristics
+.INCLUDE "../MOSIS_025m.txt"
+
+M1 d g s s CMOSN L=2u W=3u
+
+Vgs g s DC 2.5
+Vds d s DC 0
+Vs s 0 DC 0
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+*Normal current characteristics
+DC Vds 0 2.5 0.25 Vgs 0 2.5 0.25
+
+plot -i(vds)
+hardcopy nmos_cur.ps -i(vds)
+
+*Loop where we do dc analysis for every vgs
+*value and calculate R_instant-R_eq_av
+*VT of NMOS is 0.4238252
+foreach i 0.8 1.2 1.8 2.5
+  alter vgs=$i
+  
+  if $i = 0.8
+    DC Vds 0.38 0.8 0.001
+  end
+  if $i = 1.2
+    DC Vds 0.78 1.2 0.001
+  end
+  if $i = 1.8
+    DC Vds 1.38 1.8 0.001
+  end
+  if $i = 2.5
+    DC Vds 2.08 2.5 0.001
+  end
+
+let insta_resist= -d/i(vds)
+let average_resist = mean(insta_resist)
+print average_resist
+plot insta_resist average_resist title 'VGS=$i'
+
+end
+
+.endc
+
+.end

@@ -1,0 +1,39 @@
+*Decoder 1bit cell
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "decoder_1bit.spice"
+
+.GLOBAL vdd
+
+Vgnd gnd! 0 DC 0
+V1 vdd 0 DC 2.5
+V2 a 0 DC 2.5
+V3 b 0 DC 2.5
+V4 c 0 PULSE (2.5 0 0.5n 0.2n 0.2n 10n 20n)
+
+.TRAN 1n 100n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+plot c out
+
+******MEASUREMENTS*******************************
+*************************************************
+*Measuring trise
+meas tran trise
++trig v(out) val=0.25 CROSS=2
++targ v(out) val=2.25 CROSS=2
+
+*Measuring tfall
+meas tran tfall
++trig v(out) val=2.25 CROSS=3
++targ v(out) val=0.25 CROSS=3
+
+.endc
+
+.end

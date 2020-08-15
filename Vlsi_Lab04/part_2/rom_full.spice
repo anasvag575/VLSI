@@ -1,0 +1,54 @@
+* SPICE3 file created from rom_full.ext - technology: scmos
+
+M1000 bit3 wl7 gnd Gnd CMOSN w=4u l=2u
++  ad=152p pd=140u as=1524p ps=794u
+M1001 bit2 wl7 gnd Gnd CMOSN w=4u l=2u
++  ad=160p pd=144u as=0p ps=0u
+M1002 bit1 wl6 gnd Gnd CMOSN w=4u l=2u
++  ad=160p pd=144u as=0p ps=0u
+M1003 bit0 wl6 gnd Gnd CMOSN w=4u l=2u
++  ad=160p pd=144u as=0p ps=0u
+M1004 bit2 wl5 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 bit1 wl5 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1006 bit0 wl5 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 bit3 wl4 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1008 bit2 wl4 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1009 bit1 wl4 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1010 bit3 wl3 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 bit1 wl3 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 bit0 wl2 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1013 bit2 wl1 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1014 bit0 wl1 gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1015 vdd gnd bit0 w_n59_28# CMOSP w=6u l=2u
++  ad=120p pd=88u as=30p ps=22u
+M1016 vdd gnd bit1 w_n59_28# CMOSP w=6u l=2u
++  ad=0p pd=0u as=30p ps=22u
+M1017 vdd gnd bit2 w_n59_28# CMOSP w=6u l=2u
++  ad=0p pd=0u as=30p ps=22u
+M1018 vdd gnd bit3 w_n59_28# CMOSP w=6u l=2u
++  ad=0p pd=0u as=30p ps=22u
+C0 w_n59_28# vdd 7.9fF
+C1 w_n59_28# gnd! 15.7fF
+C2 wl0 gnd! 20.8fF **FLOATING
+C3 wl1 gnd! 19.5fF
+C4 wl2 gnd! 20.2fF
+C5 wl3 gnd! 19.5fF
+C6 wl4 gnd! 18.9fF
+C7 wl5 gnd! 18.9fF
+C8 wl6 gnd! 19.5fF
+C9 bit0 gnd! 29.5fF
+C10 bit1 gnd! 29.5fF
+C11 bit2 gnd! 29.5fF
+C12 wl7 gnd! 19.5fF
+C13 bit3 gnd! 29.5fF

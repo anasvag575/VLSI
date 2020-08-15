@@ -1,0 +1,31 @@
+*PMOS voltage threshold
+.INCLUDE "../MOSIS_025m.txt"
+
+M1 out2 g1 out1 out1 CMOSP L=2u W=3u
+M2 0 g2 out2 out2 CMOSP L=2u W=3u
+C1 out1 0 0.1p
+
+Vgs2 g2 0 DC 0
+Vgs1 g1 0 DC 0
+
+.ic V(out1)=2.5
+.tran 0.1ns 200ns
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+*run, plot and save
+run
+plot out1 out2
+hardcopy pmos_thres_dual.ps out1 out2
+
+.endc
+
+*Measurements of threshold voltages
+.meas tran vt_total find par('v(out1)') at=15e-8
+
+.end

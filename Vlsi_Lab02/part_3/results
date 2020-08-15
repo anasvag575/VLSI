@@ -1,0 +1,24 @@
+Results for Vdd = 0.7
+avg_cur = 6.405707e-10
+avg_power = 4.483995e-10
+noisemar_low = 2.801481e-01
+noisemar_high = 3.900383e-01
+
+Results for Vdd = 1.2
+avg_cur = 2.232293e-07
+avg_power = 2.678752e-07
+noisemar_low = 5.147227e-01
+noisemar_high = 6.261007e-01
+
+Results for Vdd = 1.8
+avg_cur = 4.743122e-06
+avg_power = 8.537620e-06
+noisemar_low = 7.734826e-01
+noisemar_high = 8.439013e-01
+
+Results for Vdd = 2.5
+avg_cur = 1.902878e-05
+avg_power = 4.757195e-05
+noisemar_low = 1.086513e+00
+noisemar_high = 1.090841e+00
+

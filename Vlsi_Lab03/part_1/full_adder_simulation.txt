@@ -1,0 +1,23 @@
+*Full adder sim file
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "full_adder.spice"
+
+V1 vdd 0 DC 2.5
+Vgnd gnd! 0 DC 0
+V2 A 0 DC 2.5
+V3 B 0 DC 0
+*V3 B 0 PULSE (2.5 0 2n 0.25n 0.25n 32n 64n)
+V4 cin 0 PULSE (2.5 0 2n 0.25n 0.25n 32n 64n)
+
+.TRAN 1n 450n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+*hardcopy maj.ps 
+.endc
+
+.end

@@ -1,0 +1,35 @@
+*Equivelant resistance  for NMOS
+.INCLUDE "../MOSIS_025m.txt"
+
+M1 d g s 0 CMOSN L=2u W=3u ad=19p pd=18u as=19p ps=18u
+C1 d 0 0.1p
+
+Vgs g s DC 2.5
+Vs s 0 DC 0
+
+.tran 0.1ps 2ns
+.ic V(d)=2.5
+
+.control
+*run and plot
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+plot V(d)
+
+*measuring time 
+meas tran t_const
++trig v(d) val=2.49 CROSS=1 
++targ v(d) val=1.25 CROSS=1
+
+*calculating equivalent resistance
+*based on equation
+let Resist_equ ='t_const/(0.69*0.1p)' 
+print Resist_equ
+
+.endc
+
+.end

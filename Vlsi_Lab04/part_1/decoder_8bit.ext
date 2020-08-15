@@ -1,0 +1,138 @@
+timestamp 1577653595
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use inverter inverter_0 1 0 -294 0 1 138
+use inverter inverter_1 1 0 -295 0 1 34
+use decoder_1bit decoder_1bit_0 1 0 -183 0 1 78
+use decoder_1bit decoder_1bit_1 1 0 -45 0 1 78
+use decoder_1bit decoder_1bit_2 1 0 95 0 1 78
+use decoder_1bit decoder_1bit_3 1 0 242 0 1 78
+use decoder_1bit decoder_1bit_4 1 0 376 0 1 78
+use decoder_1bit decoder_1bit_5 1 0 513 0 1 78
+use decoder_1bit decoder_1bit_6 1 0 652 0 1 78
+use decoder_1bit decoder_1bit_7 1 0 787 0 1 78
+use inverter inverter_2 1 0 -293 0 1 -75
+node "m1_708_11#" 1 14100 708 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 300 158 0 0 0 0
+node "m1_568_11#" 1 15604 568 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 332 174 0 0 0 0
+node "m1_429_11#" 1 16356 429 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 348 182 0 0 0 0
+node "m1_294_11#" 1 15980 294 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 340 178 0 0 0 0
+node "m1_149_11#" 1 17108 149 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 364 190 0 0 0 0
+node "m1_9_11#" 1 16168 9 11 m1 0 0 0 0 0 0 0 0 0 0 0 0 344 180 0 0 0 0
+node "m1_n321_n121#" 19 270952 -321 -121 m1 0 0 0 0 0 0 0 0 0 0 0 0 5448 2764 976 520 0 0
+node "m1_n342_n133#" 22 311392 -342 -133 m1 0 0 0 0 0 0 0 0 0 0 0 0 6192 3136 1344 704 0 0
+node "m1_705_99#" 1 15040 705 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 320 168 0 0 0 0
+node "m1_568_99#" 1 15604 568 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 332 174 0 0 0 0
+node "m1_428_99#" 1 16356 428 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 348 182 0 0 0 0
+node "m1_296_99#" 1 15980 296 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 340 178 0 0 0 0
+node "m1_150_99#" 1 17108 150 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 364 190 0 0 0 0
+node "m1_9_99#" 1 16168 9 99 m1 0 0 0 0 0 0 0 0 0 0 0 0 344 180 0 0 0 0
+node "m1_n281_n76#" 17 240624 -281 -76 m1 0 0 0 0 0 0 0 0 0 0 0 0 4620 2350 1476 770 0 0
+node "m1_n282_33#" 14 194776 -282 33 m1 0 0 0 0 0 0 0 0 0 0 0 0 3596 1838 1628 846 0 0
+node "m1_n324_5#" 6 65880 -324 5 v 0 0 0 0 0 0 0 0 0 0 0 0 632 348 2140 1078 0 0
+node "m1_n349_n143#" 24 338788 -349 -143 m1 0 0 0 0 0 0 0 0 0 0 0 0 6652 3366 1712 888 0 0
+node "m1_n282_137#" 11 154808 -282 137 m1 0 0 0 0 0 0 0 0 0 0 0 0 2896 1480 1224 636 0 0
+node "m1_n290_79#" 5 64504 -290 79 m1 0 0 0 0 0 0 0 0 0 0 0 0 724 394 1748 882 0 0
+cap "m1_n281_n76#" "m1_296_99#" 720
+cap "m1_9_99#" "m1_n281_n76#" 720
+cap "m1_9_11#" "m1_n342_n133#" 720
+cap "m1_n281_n76#" "m1_n290_79#" 720
+cap "m1_n281_n76#" "m1_n282_33#" 2880
+cap "m1_n281_n76#" "m1_n282_137#" 2880
+cap "m1_149_11#" "m1_n342_n133#" 720
+cap "m1_429_11#" "m1_n349_n143#" 720
+cap "m1_n349_n143#" "m1_n342_n133#" 2880
+cap "m1_296_99#" "m1_n282_33#" 720
+cap "m1_428_99#" "m1_n282_33#" 720
+cap "m1_n349_n143#" "m1_n324_5#" 1440
+cap "m1_149_11#" "m1_n321_n121#" 720
+cap "m1_n349_n143#" "m1_n321_n121#" 2880
+cap "m1_n349_n143#" "m1_294_11#" 720
+cap "m1_9_99#" "m1_n282_137#" 720
+cap "m1_n290_79#" "m1_n282_33#" 2160
+cap "m1_n324_5#" "m1_n342_n133#" 2160
+cap "m1_n349_n143#" "m1_n281_n76#" 1440
+cap "m1_429_11#" "m1_n321_n121#" 720
+cap "m1_n321_n121#" "m1_n342_n133#" 2880
+cap "m1_n282_137#" "m1_n282_33#" 2880
+cap "m1_n290_79#" "m1_n282_137#" 2160
+cap "m1_n324_5#" "m1_n321_n121#" 4140
+cap "m1_n281_n76#" "m1_n342_n133#" 1440
+cap "m1_n349_n143#" "m1_708_11#" 720
+cap "m1_n281_n76#" "m1_n324_5#" 720
+cap "m1_150_99#" "m1_n282_137#" 720
+cap "m1_708_11#" "m1_n342_n133#" 720
+cap "m1_568_11#" "m1_n349_n143#" 720
+cap "m1_n349_n143#" "m1_n282_33#" 1440
+cap "m1_568_99#" "m1_n281_n76#" 720
+cap "m1_708_11#" "m1_n321_n121#" 720
+cap "m1_568_11#" "m1_n342_n133#" 720
+cap "inverter_2/out" "m1_n324_5#" 720
+cap "m1_n324_5#" "inverter_2/in" 152
+cap "decoder_1bit_2/a" "decoder_1bit_2/b" 240
+merge "decoder_1bit_7/a" "decoder_1bit_6/a" -1316 0 0 0 0 0 0 0 0 0 0 0 0 -28 -54 0 0 0 0
+merge "decoder_1bit_6/a" "decoder_1bit_5/a"
+merge "decoder_1bit_5/a" "decoder_1bit_4/a"
+merge "decoder_1bit_4/a" "inverter_0/in"
+merge "inverter_0/in" "m1_n349_n143#"
+merge "inverter_0/vdd!" "decoder_1bit_7/vdd!" -1316 0 0 0 0 0 0 0 0 0 0 0 0 -28 -42 0 0 0 0
+merge "decoder_1bit_7/vdd!" "decoder_1bit_6/vdd!"
+merge "decoder_1bit_6/vdd!" "decoder_1bit_5/vdd!"
+merge "decoder_1bit_5/vdd!" "decoder_1bit_4/vdd!"
+merge "decoder_1bit_4/vdd!" "decoder_1bit_3/vdd!"
+merge "decoder_1bit_3/vdd!" "decoder_1bit_2/vdd!"
+merge "decoder_1bit_2/vdd!" "decoder_1bit_1/vdd!"
+merge "decoder_1bit_1/vdd!" "decoder_1bit_0/vdd!"
+merge "decoder_1bit_0/vdd!" "inverter_1/vdd!"
+merge "inverter_1/vdd!" "inverter_2/vdd!"
+merge "inverter_2/vdd!" "m1_n290_79#"
+merge "m1_n290_79#" "m1_9_99#"
+merge "m1_9_99#" "m1_150_99#"
+merge "m1_150_99#" "m1_296_99#"
+merge "m1_296_99#" "m1_428_99#"
+merge "m1_428_99#" "m1_568_99#"
+merge "m1_568_99#" "m1_705_99#"
+merge "decoder_1bit_7/b" "decoder_1bit_6/b" -6016 0 0 0 0 0 0 0 0 0 0 0 0 -128 -104 0 0 0 0
+merge "decoder_1bit_6/b" "decoder_1bit_3/b"
+merge "decoder_1bit_3/b" "decoder_1bit_2/b"
+merge "decoder_1bit_2/b" "inverter_1/in"
+merge "inverter_1/in" "m1_n342_n133#"
+merge "inverter_0/gnd!" "decoder_1bit_7/gnd!" -2068 0 0 0 0 0 0 0 0 0 0 0 0 -44 -50 0 0 0 0
+merge "decoder_1bit_7/gnd!" "decoder_1bit_6/gnd!"
+merge "decoder_1bit_6/gnd!" "decoder_1bit_5/gnd!"
+merge "decoder_1bit_5/gnd!" "decoder_1bit_4/gnd!"
+merge "decoder_1bit_4/gnd!" "decoder_1bit_3/gnd!"
+merge "decoder_1bit_3/gnd!" "decoder_1bit_2/gnd!"
+merge "decoder_1bit_2/gnd!" "decoder_1bit_1/gnd!"
+merge "decoder_1bit_1/gnd!" "decoder_1bit_0/gnd!"
+merge "decoder_1bit_0/gnd!" "inverter_1/gnd!"
+merge "inverter_1/gnd!" "inverter_2/gnd!"
+merge "inverter_2/gnd!" "m1_n324_5#"
+merge "m1_n324_5#" "m1_9_11#"
+merge "m1_9_11#" "m1_149_11#"
+merge "m1_149_11#" "m1_294_11#"
+merge "m1_294_11#" "m1_429_11#"
+merge "m1_429_11#" "m1_568_11#"
+merge "m1_568_11#" "m1_708_11#"
+merge "decoder_1bit_7/c" "decoder_1bit_5/c" -7144 0 0 0 0 0 0 0 0 0 0 0 0 -152 -116 0 0 0 0
+merge "decoder_1bit_5/c" "decoder_1bit_3/c"
+merge "decoder_1bit_3/c" "decoder_1bit_1/c"
+merge "decoder_1bit_1/c" "inverter_2/in"
+merge "inverter_2/in" "m1_n321_n121#"
+merge "decoder_1bit_3/a" "decoder_1bit_2/a" -4512 0 0 0 0 0 0 0 0 0 0 0 0 -80 -80 0 0 0 0
+merge "decoder_1bit_2/a" "decoder_1bit_1/a"
+merge "decoder_1bit_1/a" "decoder_1bit_0/a"
+merge "decoder_1bit_0/a" "inverter_0/out"
+merge "inverter_0/out" "m1_n282_137#"
+merge "decoder_1bit_6/c" "decoder_1bit_4/c" -11352 0 0 0 0 0 0 0 0 0 0 0 0 -172 -126 -188 -98 0 0
+merge "decoder_1bit_4/c" "decoder_1bit_2/c"
+merge "decoder_1bit_2/c" "decoder_1bit_0/c"
+merge "decoder_1bit_0/c" "inverter_2/out"
+merge "inverter_2/out" "m1_n281_n76#"
+merge "decoder_1bit_5/b" "decoder_1bit_4/b" -5264 0 0 0 0 0 0 0 0 0 0 0 0 -112 -96 0 0 0 0
+merge "decoder_1bit_4/b" "decoder_1bit_1/b"
+merge "decoder_1bit_1/b" "decoder_1bit_0/b"
+merge "decoder_1bit_0/b" "inverter_1/out"
+merge "inverter_1/out" "m1_n282_33#"

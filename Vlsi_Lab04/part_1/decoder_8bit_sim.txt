@@ -1,0 +1,47 @@
+*Decoder 1bit cell
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "decoder_8bit.spice"
+
+.GLOBAL vdd
+
+Vgnd gnd! 0 DC 0
+V1 vdd 0 DC 2.5
+V2 a 0 PULSE (2.5 0 0.5n 0.2n 0.2n 80n 160n)
+V3 b 0 PULSE (2.5 0 0.5n 0.2n 0.2n 80n 160n)
+V4 c 0 PULSE (2.5 0 0.5n 0.2n 0.2n 80n 160n)
+
+.TRAN 1n 400n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+*****MEASUREMENTS*********
+**************************
+*Measuring trise_best
+meas tran trise_best
++trig v(out7) val=0.25 CROSS=2
++targ v(out7) val=2.25 CROSS=2
+
+*Measuring trise_worst
+meas tran trise_worst
++trig v(out0) val=0.25 CROSS=1
++targ v(out0) val=2.25 CROSS=1
+
+*Measuring tfall_best
+meas tran tfall_best
++trig v(out7) val=2.25 CROSS=3
++targ v(out7) val=0.25 CROSS=3
+
+*Measuring tfall_worst
+meas tran tfall_worst
++trig v(out0) val=2.25 CROSS=2
++targ v(out0) val=0.25 CROSS=2
+
+.endc
+
+.end

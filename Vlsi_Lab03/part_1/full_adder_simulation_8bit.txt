@@ -1,0 +1,37 @@
+*Full Adder 8bit sim file
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "full_adder_8bit.spice"
+
+V1 vdd 0 DC 2.5
+Vgnd gnd! 0 DC 0
+Vi7 full_adder_7/b 0 DC 0
+Vi7a full_adder_7/a 0 DC 2.5
+Vi6 full_adder_6/b 0 DC 0
+Vi6a full_adder_6/a 0 DC 2.5
+Vi5a full_adder_5/b 0 DC 0
+Vi5 full_adder_5/a 0 DC 2.5
+Vi4a full_adder_4/b 0 DC 0
+Vi4 full_adder_4/a 0 DC 2.5
+Vi3a full_adder_3/b 0 DC 0
+Vi3 full_adder_3/a 0 DC 2.5
+Vi2a full_adder_2/b 0 DC 0
+Vi2 full_adder_2/a 0 DC 2.5
+Vi1a full_adder_1/b 0 DC 0
+Vi1 full_adder_1/a 0 DC 2.5
+Vi0a full_adder_0/a 0 PULSE (2.5 0 2n 0.25n 0.25n 200n 400n)
+Vi0 full_adder_0/b 0 DC 2.5
+V4 full_adder_0/cin 0 DC 0
+*V4 full_adder_0/cin 0 PULSE (2.5 0 2n 0.25n 0.25n 32n 64n)
+
+.TRAN 1n 1000n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+*hardcopy maj.ps 
+.endc
+
+.end

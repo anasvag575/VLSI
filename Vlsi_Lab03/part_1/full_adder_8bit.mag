@@ -1,0 +1,86 @@
+magic
+tech scmos
+timestamp 1575744236
+<< metal1 >>
+rect 62 31 95 35
+rect 261 31 294 35
+rect 455 31 492 35
+rect 657 31 694 35
+rect 854 34 868 35
+rect 854 31 886 34
+rect 861 30 886 31
+rect 1049 30 1071 34
+rect 1239 30 1269 34
+rect 62 -56 71 -52
+rect 263 -56 271 -52
+rect 456 -56 468 -52
+rect 660 -56 670 -52
+rect 855 -56 863 -52
+rect 1048 -57 1056 -53
+rect 1240 -57 1251 -53
+rect 61 -75 94 -71
+rect 261 -75 294 -71
+rect 454 -75 491 -71
+rect 658 -75 695 -71
+rect 854 -72 866 -71
+rect 854 -75 902 -72
+rect 860 -76 902 -75
+rect 1049 -76 1071 -72
+rect 1237 -76 1267 -72
+<< metal2 >>
+rect 80 -39 137 -35
+rect 275 -39 330 -35
+rect 468 -39 534 -35
+rect 670 -39 729 -35
+rect 80 -52 85 -39
+rect 75 -56 85 -52
+rect 275 -56 279 -39
+rect 468 -52 472 -39
+rect 670 -52 674 -39
+rect 863 -40 923 -36
+rect 1056 -40 1115 -36
+rect 1251 -40 1310 -36
+rect 863 -52 867 -40
+rect 1056 -53 1060 -40
+rect 1251 -53 1255 -40
+<< m2contact >>
+rect 71 -56 75 -52
+rect 271 -56 275 -52
+rect 468 -56 472 -52
+rect 670 -56 674 -52
+rect 863 -56 867 -52
+rect 1056 -57 1060 -53
+rect 1251 -57 1255 -53
+use full_adder  full_adder_0
+timestamp 1573894190
+transform 1 0 -106 0 1 -20
+box -3 -58 168 57
+use full_adder  full_adder_1
+timestamp 1573894190
+transform 1 0 95 0 1 -20
+box -3 -58 168 57
+use full_adder  full_adder_2
+timestamp 1573894190
+transform 1 0 288 0 1 -20
+box -3 -58 168 57
+use full_adder  full_adder_3
+timestamp 1573894190
+transform 1 0 492 0 1 -20
+box -3 -58 168 57
+use full_adder  full_adder_4
+timestamp 1573894190
+transform 1 0 687 0 1 -20
+box -3 -58 168 57
+use full_adder  full_adder_5
+timestamp 1573894190
+transform 1 0 881 0 1 -21
+box -3 -58 168 57
+use full_adder  full_adder_6
+timestamp 1573894190
+transform 1 0 1073 0 1 -21
+box -3 -58 168 57
+use full_adder  full_adder_7
+timestamp 1573894190
+transform 1 0 1268 0 1 -21
+box -3 -58 168 57
+<< end >>

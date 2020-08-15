@@ -1,0 +1,100 @@
+timestamp 1575744236
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use full_adder full_adder_0 1 0 -106 0 1 -20
+use full_adder full_adder_1 1 0 95 0 1 -20
+use full_adder full_adder_2 1 0 288 0 1 -20
+use full_adder full_adder_3 1 0 492 0 1 -20
+use full_adder full_adder_4 1 0 687 0 1 -20
+use full_adder full_adder_5 1 0 881 0 1 -21
+use full_adder full_adder_6 1 0 1073 0 1 -21
+use full_adder full_adder_7 1 0 1268 0 1 -21
+node "m1_1237_n76#" 0 5640 1237 -76 m1 0 0 0 0 0 0 0 0 0 0 0 0 120 68 0 0 0 0
+node "m1_1049_n76#" 0 4136 1049 -76 m1 0 0 0 0 0 0 0 0 0 0 0 0 88 52 0 0 0 0
+node "m1_854_n75#" 1 9306 854 -75 m1 0 0 0 0 0 0 0 0 0 0 0 0 198 106 0 0 0 0
+node "m1_658_n75#" 0 6956 658 -75 m1 0 0 0 0 0 0 0 0 0 0 0 0 148 82 0 0 0 0
+node "m1_454_n75#" 0 6956 454 -75 m1 0 0 0 0 0 0 0 0 0 0 0 0 148 82 0 0 0 0
+node "m1_261_n75#" 0 6204 261 -75 m1 0 0 0 0 0 0 0 0 0 0 0 0 132 74 0 0 0 0
+node "m1_61_n75#" 0 6204 61 -75 m1 0 0 0 0 0 0 0 0 0 0 0 0 132 74 0 0 0 0
+node "m1_1240_n57#" 1 8292 1240 -57 m1 0 0 0 0 0 0 0 0 0 0 0 0 60 38 304 160 0 0
+node "m1_1048_n57#" 1 7728 1048 -57 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 32 304 160 0 0
+node "m1_855_n56#" 1 7728 855 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 32 304 160 0 0
+node "m1_660_n56#" 1 8104 660 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 56 36 304 160 0 0
+node "m1_456_n56#" 1 9012 456 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 64 40 332 174 0 0
+node "m1_263_n56#" 1 7728 263 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 32 304 160 0 0
+node "m1_62_n56#" 1 8771 62 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 52 34 349 174 0 0
+node "m1_1239_30#" 0 5640 1239 30 m1 0 0 0 0 0 0 0 0 0 0 0 0 120 68 0 0 0 0
+node "m1_1049_30#" 0 4136 1049 30 m1 0 0 0 0 0 0 0 0 0 0 0 0 88 52 0 0 0 0
+node "m1_854_31#" 0 6345 854 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 135 74 0 0 0 0
+node "m1_657_31#" 0 6956 657 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 148 82 0 0 0 0
+node "m1_455_31#" 0 6956 455 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 148 82 0 0 0 0
+node "m1_261_31#" 0 6204 261 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 132 74 0 0 0 0
+node "m1_62_31#" 0 6204 62 31 m1 0 0 0 0 0 0 0 0 0 0 0 0 132 74 0 0 0 0
+cap "full_adder_1/b" "full_adder_1/cin" 827
+cap "full_adder_1/a" "full_adder_1/cin" 827
+cap "full_adder_1/cin" "full_adder_1/a_17_n38#" 720
+cap "full_adder_2/b" "full_adder_1/cout" 405
+cap "full_adder_2/cin" "full_adder_2/a" 827
+cap "full_adder_2/cin" "full_adder_2/b" 422
+cap "full_adder_2/a_17_n38#" "full_adder_2/cin" 720
+cap "full_adder_3/cin" "full_adder_3/a_17_n38#" 720
+cap "full_adder_3/cin" "full_adder_3/b" 827
+cap "full_adder_3/a" "full_adder_3/cin" 827
+cap "full_adder_3/cout" "full_adder_4/b" 540
+cap "full_adder_4/cin" "full_adder_4/a" 827
+cap "full_adder_4/b" "full_adder_4/cin" 287
+cap "full_adder_4/a_17_n38#" "full_adder_4/cin" 720
+cap "full_adder_4/cout" "full_adder_5/b" 827
+cap "full_adder_5/cin" "full_adder_5/a_17_n38#" 720
+cap "full_adder_5/cin" "full_adder_5/a" 827
+cap "full_adder_6/a" "full_adder_5/cout" 827
+cap "full_adder_6/b" "full_adder_5/cout" 827
+cap "full_adder_6/a_17_n38#" "full_adder_6/cin" 720
+cap "full_adder_6/cout" "full_adder_7/a_17_n38#" 720
+cap "full_adder_6/cout" "full_adder_7/b" 827
+cap "full_adder_6/cout" "full_adder_7/a" 827
+merge "full_adder_7/vdd!" "full_adder_6/vdd!" -1128 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0
+merge "full_adder_6/vdd!" "full_adder_5/vdd!"
+merge "full_adder_5/vdd!" "full_adder_4/vdd!"
+merge "full_adder_4/vdd!" "full_adder_3/vdd!"
+merge "full_adder_3/vdd!" "full_adder_2/vdd!"
+merge "full_adder_2/vdd!" "full_adder_1/vdd!"
+merge "full_adder_1/vdd!" "full_adder_0/vdd!"
+merge "full_adder_0/vdd!" "m1_62_31#"
+merge "m1_62_31#" "m1_261_31#"
+merge "m1_261_31#" "m1_455_31#"
+merge "m1_455_31#" "m1_657_31#"
+merge "m1_657_31#" "m1_854_31#"
+merge "m1_854_31#" "m1_1049_30#"
+merge "m1_1049_30#" "m1_1239_30#"
+merge "full_adder_5/cin" "full_adder_4/cout" -2470 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -16 -16 0 0
+merge "full_adder_4/cout" "m1_855_n56#"
+merge "full_adder_3/cin" "full_adder_2/cout" -2470 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -16 -16 0 0
+merge "full_adder_2/cout" "m1_456_n56#"
+merge "full_adder_7/gnd!" "full_adder_6/gnd!" -1128 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0
+merge "full_adder_6/gnd!" "full_adder_5/gnd!"
+merge "full_adder_5/gnd!" "full_adder_4/gnd!"
+merge "full_adder_4/gnd!" "full_adder_3/gnd!"
+merge "full_adder_3/gnd!" "full_adder_2/gnd!"
+merge "full_adder_2/gnd!" "full_adder_1/gnd!"
+merge "full_adder_1/gnd!" "full_adder_0/gnd!"
+merge "full_adder_0/gnd!" "m1_61_n75#"
+merge "m1_61_n75#" "m1_261_n75#"
+merge "m1_261_n75#" "m1_454_n75#"
+merge "m1_454_n75#" "m1_658_n75#"
+merge "m1_658_n75#" "m1_854_n75#"
+merge "m1_854_n75#" "m1_1049_n76#"
+merge "m1_1049_n76#" "m1_1237_n76#"
+merge "full_adder_2/cin" "full_adder_1/cout" -2470 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -16 -16 0 0
+merge "full_adder_1/cout" "m1_263_n56#"
+merge "full_adder_1/cin" "full_adder_0/cout" -2470 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -16 -16 0 0
+merge "full_adder_0/cout" "m1_62_n56#"
+merge "full_adder_6/cin" "full_adder_5/cout" -2658 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 -16 -16 0 0
+merge "full_adder_5/cout" "m1_1048_n57#"
+merge "full_adder_7/cin" "full_adder_6/cout" -2658 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 -16 -16 0 0
+merge "full_adder_6/cout" "m1_1240_n57#"
+merge "full_adder_4/cin" "full_adder_3/cout" -2470 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -16 -16 0 0
+merge "full_adder_3/cout" "m1_660_n56#"

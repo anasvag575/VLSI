@@ -1,0 +1,23 @@
+* SPICE3 file created from aoi31.ext - technology: scmos
+
+M1000 Vdd B Out Vdd CMOSP w=5u l=2u
++  ad=110p pd=46u as=100p ps=60u
+M1001 a_13_2# A Vdd Vdd CMOSP w=15u l=2u
++  ad=120p pd=46u as=0p ps=0u
+M1002 a_23_2# C a_13_2# Vdd CMOSP w=15u l=2u
++  ad=120p pd=46u as=0p ps=0u
+M1003 Out D a_23_2# Vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_3_n27# B Out Gnd CMOSN w=4u l=2u
++  ad=64p pd=48u as=20p ps=18u
+M1005 Gnd A a_3_n27# Gnd CMOSN w=4u l=2u
++  ad=52p pd=42u as=0p ps=0u
+M1006 a_3_n27# C Gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 Gnd D a_3_n27# Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+C0 Out Vdd 2.1fF
+C1 a_3_n27# gnd! 4.2fF
+C2 Out gnd! 10.4fF
+C3 Gnd gnd! 6.7fF
+C4 Vdd gnd! 11.0fF

@@ -1,0 +1,8 @@
+* SPICE3 file created from inverter.ext - technology: scmos
+
+M1 out in vdd vdd CMOSP w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+M2 out in gnd gnd CMOSN w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+C0 out gnd 2.1F
+C1 in gnd 5.3F

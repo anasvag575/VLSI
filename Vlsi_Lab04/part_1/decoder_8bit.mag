@@ -1,0 +1,228 @@
+magic
+tech scmos
+timestamp 1577653595
+<< metal1 >>
+rect -280 183 -256 187
+rect -252 161 -67 165
+rect -63 161 77 165
+rect 81 161 214 165
+rect -252 141 -248 161
+rect -349 137 -306 141
+rect -282 137 -248 141
+rect -349 -139 -345 137
+rect -320 109 -297 113
+rect -290 79 -256 83
+rect -208 67 -204 161
+rect -188 145 -88 149
+rect -84 145 358 149
+rect 362 145 489 149
+rect -188 129 67 133
+rect 71 129 347 133
+rect 351 129 602 133
+rect -133 99 -120 103
+rect -116 99 -49 103
+rect 9 99 95 103
+rect 150 99 241 103
+rect 296 99 381 103
+rect 428 99 515 103
+rect 568 99 651 103
+rect 705 99 785 103
+rect -208 63 -183 67
+rect -63 63 -47 67
+rect 81 63 115 67
+rect 218 63 237 67
+rect 339 63 371 67
+rect 477 63 512 67
+rect 623 63 647 67
+rect 778 63 785 67
+rect -223 56 -185 60
+rect -84 56 -46 60
+rect 58 56 101 60
+rect 206 56 244 60
+rect 362 56 378 60
+rect 493 56 521 60
+rect 640 56 653 60
+rect 763 56 787 60
+rect -227 37 -223 56
+rect -211 49 -186 53
+rect -66 49 -50 53
+rect 71 49 111 53
+rect 225 49 263 53
+rect 351 49 382 53
+rect 501 49 512 53
+rect 606 49 654 53
+rect 745 49 787 53
+rect -211 45 -207 49
+rect -213 41 -207 45
+rect -342 33 -304 37
+rect -282 33 -223 37
+rect -342 -129 -338 33
+rect -320 5 -285 9
+rect -283 -30 -256 -26
+rect -211 -72 -207 41
+rect -129 11 -101 15
+rect -97 11 -45 15
+rect 9 11 95 15
+rect 149 11 240 15
+rect 294 11 379 15
+rect 429 11 516 15
+rect 568 11 651 15
+rect 708 11 783 15
+rect -321 -76 -302 -72
+rect -281 -76 -207 -72
+rect -191 -8 -70 -4
+rect -66 -8 221 -4
+rect 225 -8 497 -4
+rect 501 -8 741 -4
+rect -321 -117 -317 -76
+rect -308 -104 -304 -100
+rect -191 -117 -187 -8
+rect -321 -121 -187 -117
+rect -177 -24 54 -20
+rect 58 -24 202 -20
+rect 206 -24 636 -20
+rect 640 -24 759 -20
+rect -177 -129 -173 -24
+rect -342 -133 -173 -129
+rect -160 -40 335 -36
+rect 339 -40 473 -36
+rect 477 -40 619 -36
+rect 623 -40 774 -36
+rect -160 -139 -156 -40
+rect -349 -143 -156 -139
+<< metal2 >>
+rect -252 183 -116 187
+rect -324 9 -320 109
+rect -324 -68 -320 5
+rect -256 83 -252 183
+rect -256 -26 -252 79
+rect -227 145 -192 149
+rect -227 60 -223 145
+rect -217 129 -192 133
+rect -217 45 -213 129
+rect -120 103 -116 183
+rect -88 60 -84 145
+rect -67 67 -63 161
+rect -101 -68 -97 11
+rect -70 -4 -66 49
+rect 54 -20 58 56
+rect 67 53 71 129
+rect 77 67 81 161
+rect 214 67 218 161
+rect 202 -20 206 56
+rect 221 -4 225 49
+rect 335 -36 339 63
+rect 347 53 351 129
+rect 358 60 362 145
+rect 473 -36 477 63
+rect 489 60 493 145
+rect 602 53 606 129
+rect 497 -4 501 49
+rect 619 -36 623 63
+rect 636 -20 640 56
+rect 741 -4 745 49
+rect 759 -20 763 56
+rect 774 -36 778 63
+rect -324 -72 -97 -68
+rect -324 -100 -320 -72
+rect -324 -104 -312 -100
+<< m2contact >>
+rect -256 183 -252 187
+rect -67 161 -63 165
+rect 77 161 81 165
+rect 214 161 218 165
+rect -324 109 -320 113
+rect -256 79 -252 83
+rect -192 145 -188 149
+rect -88 145 -84 149
+rect 358 145 362 149
+rect 489 145 493 149
+rect -192 129 -188 133
+rect 67 129 71 133
+rect 347 129 351 133
+rect 602 129 606 133
+rect -120 99 -116 103
+rect -67 63 -63 67
+rect 77 63 81 67
+rect 214 63 218 67
+rect 335 63 339 67
+rect 473 63 477 67
+rect 619 63 623 67
+rect 774 63 778 67
+rect -227 56 -223 60
+rect -88 56 -84 60
+rect 54 56 58 60
+rect 202 56 206 60
+rect 358 56 362 60
+rect 489 56 493 60
+rect 636 56 640 60
+rect 759 56 763 60
+rect -70 49 -66 53
+rect 67 49 71 53
+rect 221 49 225 53
+rect 347 49 351 53
+rect 497 49 501 53
+rect 602 49 606 53
+rect 741 49 745 53
+rect -217 41 -213 45
+rect -324 5 -320 9
+rect -256 -30 -252 -26
+rect -101 11 -97 15
+rect -70 -8 -66 -4
+rect 221 -8 225 -4
+rect 497 -8 501 -4
+rect 741 -8 745 -4
+rect -312 -104 -308 -100
+rect 54 -24 58 -20
+rect 202 -24 206 -20
+rect 636 -24 640 -20
+rect 759 -24 763 -20
+rect 335 -40 339 -36
+rect 473 -40 477 -36
+rect 619 -40 623 -36
+rect 774 -40 778 -36
+use inverter  inverter_0
+timestamp 1576874980
+transform 1 0 -294 0 1 138
+box -12 -30 14 50
+use inverter  inverter_1
+timestamp 1576874980
+transform 1 0 -295 0 1 34
+box -12 -30 14 50
+use decoder_1bit  decoder_1bit_0
+timestamp 1576873391
+transform 1 0 -183 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_1
+timestamp 1576873391
+transform 1 0 -45 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_2
+timestamp 1576873391
+transform 1 0 95 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_3
+timestamp 1576873391
+transform 1 0 242 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_4
+timestamp 1576873391
+transform 1 0 376 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_5
+timestamp 1576873391
+transform 1 0 513 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_6
+timestamp 1576873391
+transform 1 0 652 0 1 78
+box -5 -70 56 28
+use decoder_1bit  decoder_1bit_7
+timestamp 1576873391
+transform 1 0 787 0 1 78
+box -5 -70 56 28
+use inverter  inverter_2
+timestamp 1576874980
+transform 1 0 -293 0 1 -75
+box -12 -30 14 50
+<< end >>

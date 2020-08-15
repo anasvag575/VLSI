@@ -1,0 +1,117 @@
+*D Flip FLop sim file
+.INCLUDE "../MOSIS_025m.txt"
+
+.GLOBAL vdd
+
+*Weak INVERTER_w NODES Vin Vout Vdd
+.subckt inverter_w in out vdd
+M1 out in vdd vdd CMOSP w=9u l=2u
+M2 out in 0 0 CMOSN w=3u l=2u
+.ends inverter_w
+
+*Strong INVERTER_s NODES Vin Vout Vdd
+.subckt inverter_s in out vdd
+M1 out in vdd vdd CMOSP w=18u l=2u
+M2 out in 0 0 CMOSN w=6u l=2u
+.ends inverter_s
+
+*Load INVERTER_l NODES Vin Vout Vdd
+.subckt inverter_l in out vdd
+M1 out in vdd vdd CMOSP w=18u l=2u
+M2 out in 0 0 CMOSN w=6u l=2u
+.ends inverter_l
+
+*Pass gate NODES In Out clk iclk
+.subckt pass_gate clk iclk in out
+M1 out iclk in vdd CMOSP w=9u l=2u
+M2 in clk out 0 CMOSN w=3u l=2u
+.ends pass_gate
+
+V1 vdd 0 DC 2.5
+
+*Normal Values (200ps)
+*Vd d 0 PWL (0 0 50ns 0 50.2ns 2.5 80ns 2.5 80.2ns 0) 
+*Normal Values (400ps)
+*Vd d 0 PWL (0 0 50ns 0 50.4ns 2.5 80ns 2.5 80.4ns 0) 
+
+*Hold time with clock rise at 1.05 of the default(200ps)
+*Vd d 0 PWL (0 0 61.6ns 0 61.8ns 2.5 80ns 2.5 80.2ns 0)
+
+*Hold time with clock rise at 1.05 of the default(400ps)
+Vd d 0 PWL (0 0 61.85ns 0 62.25ns 2.5 79.8ns 2.5 80.2ns 0)
+
+*Trying to break setup - Deep Metastability
+*Vd d 0 PWL (0 0 62.362ns 0 62.562ns 2.5 80ns 2.5 80.4ns 0)
+
+vclk clk 0 PULSE (2.5 0 0.5n 0.2n 0.2n 20n 40n)
+
+*Clock Buffers
+xclk_buf_1 clk l1 vdd inverter_w
+xclk_buf_2 l1 l2 vdd inverter_w
+xclk_buf_3 l2 iclk vdd inverter_s
+xclk_buf_4 iclk clk_use vdd inverter_s
+
+*Master Latch
+xb_i1 d i1 vdd inverter_w
+xpass_t1 iclk clk_use i1 i3 pass_gate
+xpass_t2 clk_use iclk i2 i3 pass_gate
+xb_i2 qm i2 vdd inverter_w
+xb_i3 i3 qm vdd inverter_w
+
+*Slave Latch
+xb_i4 qm m1 vdd inverter_w
+xpass_t3 clk_use iclk m1 m2 pass_gate
+xpass_t4 iclk clk_use m3 m2 pass_gate
+xb_i5 q m3 vdd inverter_w
+xb_i6 m2 q vdd inverter_w
+
+x_load q qload vdd inverter_l
+
+.TRAN 1p 200n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+plot d q qm clk
+
+******MEASUREMENTS*******************************
+*************************************************
+
+*Measuring clock_to_q
+meas tran clock_to_q
++trig v(clk) val=1.25 CROSS=4
++targ v(q) val=1.25 CROSS=1
+
+*Measuring Hold_time
+meas tran Hold_time
++trig v(clk) val=1.25 CROSS=4
++targ v(clk_use) val=1.25 CROSS=4
+
+*Measuring q rise time
+meas tran q_rise
++trig v(q) val=0.25 CROSS=1
++targ v(q) val=2.25 CROSS=1
+
+*Measuring q fall time
+meas tran q_fall
++trig v(q) val=2.25 CROSS=2
++targ v(q) val=0.25 CROSS=2
+
+*Measuring qm rise time
+meas tran qm_rise
++trig v(qm) val=0.25 CROSS=1
++targ v(qm) val=2.25 CROSS=1
+
+*Measuring qm fall time
+meas tran qm_fall
++trig v(qm) val=2.25 CROSS=2
++targ v(qm) val=0.25 CROSS=2
+
+.endc
+
+.end

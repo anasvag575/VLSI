@@ -1,0 +1,183 @@
+timestamp 1577897245
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use rom_1bit rom_1bit_0 1 0 -32 0 1 7
+use rom_1bit rom_1bit_1 1 0 -12 0 1 7
+use rom_1bit rom_1bit_2 1 0 8 0 1 7
+use rom_1bit rom_1bit_3 1 0 28 0 1 7
+use rom_0bit rom_0bit_1 -1 0 -54 0 -1 3
+use rom_1bit rom_1bit_5 -1 0 -34 0 -1 3
+use rom_0bit rom_0bit_0 -1 0 -14 0 -1 3
+use rom_1bit rom_1bit_4 -1 0 6 0 -1 3
+use rom_0bit rom_0bit_2 1 0 -32 0 1 -25
+use rom_1bit rom_1bit_8 1 0 -12 0 1 -25
+use rom_1bit rom_1bit_7 1 0 8 0 1 -25
+use rom_1bit rom_1bit_6 1 0 28 0 1 -25
+use rom_1bit rom_1bit_10 -1 0 -54 0 -1 -29
+use rom_0bit rom_0bit_4 -1 0 -34 0 -1 -29
+use rom_1bit rom_1bit_9 -1 0 -14 0 -1 -29
+use rom_0bit rom_0bit_3 -1 0 6 0 -1 -29
+use rom_1bit rom_1bit_11 1 0 -32 0 1 -57
+use rom_0bit rom_0bit_7 1 0 -12 0 1 -57
+use rom_0bit rom_0bit_6 1 0 8 0 1 -57
+use rom_0bit rom_0bit_5 1 0 28 0 1 -57
+use rom_0bit rom_0bit_10 -1 0 -54 0 -1 -61
+use rom_0bit rom_0bit_9 -1 0 -34 0 -1 -61
+use rom_0bit rom_0bit_8 -1 0 -14 0 -1 -61
+use rom_1bit rom_1bit_12 -1 0 6 0 -1 -61
+use rom_0bit rom_0bit_12 1 0 -32 0 1 -89
+use rom_0bit rom_0bit_11 1 0 -12 0 1 -89
+use rom_1bit rom_1bit_14 1 0 8 0 1 -89
+use rom_1bit rom_1bit_13 1 0 28 0 1 -89
+use rom_1bit rom_1bit_16 -1 0 -54 0 -1 -93
+use rom_1bit rom_1bit_15 -1 0 -34 0 -1 -93
+use rom_0bit rom_0bit_14 -1 0 -14 0 -1 -93
+use rom_0bit rom_0bit_13 -1 0 6 0 -1 -93
+node "bit3" 0 1974 14 -113 m1 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0 0 0
+node "bit2" 0 1974 -6 -113 m1 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0 0 0
+node "bit1" 0 1974 -26 -113 m1 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0 0 0
+node "bit0" 0 1974 -46 -113 m1 0 0 0 0 0 0 0 0 0 0 0 0 42 26 0 0 0 0
+node "wl7" 84 1986 -59 -98 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl6" 84 1986 -59 -86 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl5" 84 1986 -59 -66 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl4" 84 1986 -59 -54 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl3" 84 1986 -59 -34 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl2" 84 1986 -59 -22 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl1" 84 1986 -59 -2 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl0" 84 1986 -59 10 p 0 0 0 0 14 18 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_14_31#" 72 1974 14 31 pdiff 0 0 30 22 0 0 0 0 0 0 0 0 84 40 0 0 0 0
+node "a_n6_31#" 72 1974 -6 31 pdiff 0 0 30 22 0 0 0 0 0 0 0 0 84 40 0 0 0 0
+node "a_n26_31#" 72 1974 -26 31 pdiff 0 0 30 22 0 0 0 0 0 0 0 0 84 40 0 0 0 0
+node "a_n46_31#" 72 1974 -46 31 pdiff 0 0 30 22 0 0 0 0 0 0 0 0 84 40 0 0 0 0
+node "gnd!" 1315 26320 -57 -93 ndc 64 64 0 0 166 166 0 0 0 0 0 0 648 332 0 0 0 0
+node "vdd!" 838 0 -46 38 pdiff 0 0 120 88 0 0 0 0 0 0 0 0 264 140 0 0 0 0
+node "w_n59_28#" 11972 0 -59 28 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1548 208
+cap "vdd!" "w_n59_28#" 7896
+cap "a_14_31#" "w_n59_28#" 846
+cap "w_n59_28#" "a_n6_31#" 846
+cap "w_n59_28#" "a_n26_31#" 846
+cap "a_n46_31#" "w_n59_28#" 846
+cap "w_n59_28#" "gnd!" 15698
+device mosfet pfet 14 36 15 37 2 6 "w_n59_28#" "gnd!" 4 0 "a_14_31#" 6 0 "vdd!" 6 0
+device mosfet pfet -6 36 -5 37 2 6 "w_n59_28#" "gnd!" 4 0 "a_n6_31#" 6 0 "vdd!" 6 0
+device mosfet pfet -26 36 -25 37 2 6 "w_n59_28#" "gnd!" 4 0 "a_n26_31#" 6 0 "vdd!" 6 0
+device mosfet pfet -46 36 -45 37 2 6 "w_n59_28#" "gnd!" 4 0 "a_n46_31#" 6 0 "vdd!" 6 0
+cap "rom_0bit_2/a_n13_5#" "rom_0bit_2/a_n21_n4#" -1128
+cap "rom_1bit_8/a_n13_7#" "rom_0bit_2/a_n21_n4#" -1128
+cap "rom_1bit_7/a_n13_7#" "rom_0bit_2/a_n21_n4#" -1128
+cap "rom_1bit_6/a_n13_7#" "rom_0bit_2/a_n21_n4#" -1128
+cap "rom_0bit_2/a_n13_5#" "rom_1bit_11/a_n21_n4#" -1128
+cap "rom_1bit_8/a_n13_7#" "rom_1bit_11/a_n21_n4#" -1128
+cap "rom_1bit_7/a_n13_7#" "rom_1bit_11/a_n21_n4#" -1128
+cap "rom_1bit_6/a_n13_7#" "rom_1bit_11/a_n21_n4#" -1128
+cap "rom_0bit_2/a_n13_5#" "rom_0bit_12/a_n21_n4#" -1128
+cap "rom_1bit_8/a_n13_7#" "rom_0bit_12/a_n21_n4#" -1128
+cap "rom_1bit_7/a_n13_7#" "rom_0bit_12/a_n21_n4#" -1128
+cap "rom_1bit_6/a_n13_7#" "rom_0bit_12/a_n21_n4#" -1128
+cap "rom_1bit_0/a_n21_n4#" "rom_1bit_3/a_n13_7#" -1128
+cap "rom_1bit_2/a_n13_7#" "rom_1bit_0/a_n21_n4#" -1128
+cap "rom_1bit_0/a_n21_n4#" "rom_1bit_0/a_n13_7#" -1128
+cap "rom_1bit_1/a_n13_7#" "rom_1bit_0/a_n21_n4#" -1128
+merge "rom_1bit_4/a_n21_n4#" "rom_0bit_0/a_n21_n4#" 0 -1280 -896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_0bit_0/a_n21_n4#" "rom_1bit_5/a_n21_n4#"
+merge "rom_1bit_5/a_n21_n4#" "rom_0bit_1/a_n21_n4#"
+merge "rom_0bit_1/a_n21_n4#" "rom_1bit_3/a_n21_n4#"
+merge "rom_1bit_3/a_n21_n4#" "rom_1bit_2/a_n21_n4#"
+merge "rom_1bit_2/a_n21_n4#" "rom_1bit_1/a_n21_n4#"
+merge "rom_1bit_1/a_n21_n4#" "rom_1bit_0/a_n21_n4#"
+merge "rom_1bit_0/a_n21_n4#" "rom_0bit_13/a_n21_n4#"
+merge "rom_0bit_13/a_n21_n4#" "rom_0bit_14/a_n21_n4#"
+merge "rom_0bit_14/a_n21_n4#" "rom_1bit_15/a_n21_n4#"
+merge "rom_1bit_15/a_n21_n4#" "rom_1bit_16/a_n21_n4#"
+merge "rom_1bit_16/a_n21_n4#" "rom_1bit_13/a_n21_n4#"
+merge "rom_1bit_13/a_n21_n4#" "rom_1bit_14/a_n21_n4#"
+merge "rom_1bit_14/a_n21_n4#" "rom_0bit_11/a_n21_n4#"
+merge "rom_0bit_11/a_n21_n4#" "rom_0bit_12/a_n21_n4#"
+merge "rom_0bit_12/a_n21_n4#" "rom_1bit_12/a_n21_n4#"
+merge "rom_1bit_12/a_n21_n4#" "rom_0bit_8/a_n21_n4#"
+merge "rom_0bit_8/a_n21_n4#" "rom_0bit_9/a_n21_n4#"
+merge "rom_0bit_9/a_n21_n4#" "rom_0bit_10/a_n21_n4#"
+merge "rom_0bit_10/a_n21_n4#" "rom_0bit_5/a_n21_n4#"
+merge "rom_0bit_5/a_n21_n4#" "rom_0bit_6/a_n21_n4#"
+merge "rom_0bit_6/a_n21_n4#" "rom_0bit_7/a_n21_n4#"
+merge "rom_0bit_7/a_n21_n4#" "rom_1bit_11/a_n21_n4#"
+merge "rom_1bit_11/a_n21_n4#" "rom_0bit_3/a_n21_n4#"
+merge "rom_0bit_3/a_n21_n4#" "rom_1bit_9/a_n21_n4#"
+merge "rom_1bit_9/a_n21_n4#" "rom_0bit_4/a_n21_n4#"
+merge "rom_0bit_4/a_n21_n4#" "rom_1bit_10/a_n21_n4#"
+merge "rom_1bit_10/a_n21_n4#" "rom_1bit_6/a_n21_n4#"
+merge "rom_1bit_6/a_n21_n4#" "rom_1bit_7/a_n21_n4#"
+merge "rom_1bit_7/a_n21_n4#" "rom_1bit_8/a_n21_n4#"
+merge "rom_1bit_8/a_n21_n4#" "rom_0bit_2/a_n21_n4#"
+merge "rom_0bit_2/a_n21_n4#" "gnd!"
+merge "rom_1bit_6/a_n21_3#" "rom_1bit_7/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_1bit_7/a_n21_3#" "rom_1bit_8/a_n21_3#"
+merge "rom_1bit_8/a_n21_3#" "rom_0bit_2/a_n21_3#"
+merge "rom_0bit_2/a_n21_3#" "wl2"
+merge "rom_1bit_16/a_n13_7#" "rom_0bit_12/a_n13_5#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -44 0 0 0 0
+merge "rom_0bit_12/a_n13_5#" "rom_0bit_10/a_n13_5#"
+merge "rom_0bit_10/a_n13_5#" "rom_1bit_11/a_n13_7#"
+merge "rom_1bit_11/a_n13_7#" "rom_1bit_10/a_n13_7#"
+merge "rom_1bit_10/a_n13_7#" "rom_0bit_2/a_n13_5#"
+merge "rom_0bit_2/a_n13_5#" "bit0"
+merge "bit0" "rom_0bit_1/a_n13_5#"
+merge "rom_0bit_1/a_n13_5#" "rom_1bit_0/a_n13_7#"
+merge "rom_1bit_0/a_n13_7#" "a_n46_31#"
+merge "rom_0bit_13/a_n13_5#" "rom_1bit_13/a_n13_7#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -44 0 0 0 0
+merge "rom_1bit_13/a_n13_7#" "rom_1bit_12/a_n13_7#"
+merge "rom_1bit_12/a_n13_7#" "rom_0bit_5/a_n13_5#"
+merge "rom_0bit_5/a_n13_5#" "rom_0bit_3/a_n13_5#"
+merge "rom_0bit_3/a_n13_5#" "rom_1bit_6/a_n13_7#"
+merge "rom_1bit_6/a_n13_7#" "bit3"
+merge "bit3" "rom_1bit_4/a_n13_7#"
+merge "rom_1bit_4/a_n13_7#" "rom_1bit_3/a_n13_7#"
+merge "rom_1bit_3/a_n13_7#" "a_14_31#"
+merge "rom_0bit_14/a_n13_5#" "rom_1bit_14/a_n13_7#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -44 0 0 0 0
+merge "rom_1bit_14/a_n13_7#" "rom_0bit_8/a_n13_5#"
+merge "rom_0bit_8/a_n13_5#" "rom_0bit_6/a_n13_5#"
+merge "rom_0bit_6/a_n13_5#" "rom_1bit_9/a_n13_7#"
+merge "rom_1bit_9/a_n13_7#" "rom_1bit_7/a_n13_7#"
+merge "rom_1bit_7/a_n13_7#" "bit2"
+merge "bit2" "rom_0bit_0/a_n13_5#"
+merge "rom_0bit_0/a_n13_5#" "rom_1bit_2/a_n13_7#"
+merge "rom_1bit_2/a_n13_7#" "a_n6_31#"
+merge "rom_1bit_13/a_n21_3#" "rom_1bit_14/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_1bit_14/a_n21_3#" "rom_0bit_11/a_n21_3#"
+merge "rom_0bit_11/a_n21_3#" "rom_0bit_12/a_n21_3#"
+merge "rom_0bit_12/a_n21_3#" "wl6"
+merge "rom_1bit_3/a_n21_3#" "rom_1bit_2/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_1bit_2/a_n21_3#" "rom_1bit_1/a_n21_3#"
+merge "rom_1bit_1/a_n21_3#" "rom_1bit_0/a_n21_3#"
+merge "rom_1bit_0/a_n21_3#" "wl0"
+merge "rom_1bit_12/a_n21_3#" "rom_0bit_8/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_0bit_8/a_n21_3#" "rom_0bit_9/a_n21_3#"
+merge "rom_0bit_9/a_n21_3#" "rom_0bit_10/a_n21_3#"
+merge "rom_0bit_10/a_n21_3#" "wl5"
+merge "rom_0bit_3/a_n21_3#" "rom_1bit_9/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_1bit_9/a_n21_3#" "rom_0bit_4/a_n21_3#"
+merge "rom_0bit_4/a_n21_3#" "rom_1bit_10/a_n21_3#"
+merge "rom_1bit_10/a_n21_3#" "wl3"
+merge "rom_1bit_15/a_n13_7#" "rom_0bit_11/a_n13_5#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -44 0 0 0 0
+merge "rom_0bit_11/a_n13_5#" "rom_0bit_9/a_n13_5#"
+merge "rom_0bit_9/a_n13_5#" "rom_0bit_7/a_n13_5#"
+merge "rom_0bit_7/a_n13_5#" "rom_0bit_4/a_n13_5#"
+merge "rom_0bit_4/a_n13_5#" "rom_1bit_8/a_n13_7#"
+merge "rom_1bit_8/a_n13_7#" "bit1"
+merge "bit1" "rom_1bit_5/a_n13_7#"
+merge "rom_1bit_5/a_n13_7#" "rom_1bit_1/a_n13_7#"
+merge "rom_1bit_1/a_n13_7#" "a_n26_31#"
+merge "rom_0bit_13/a_n21_3#" "rom_0bit_14/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_0bit_14/a_n21_3#" "rom_1bit_15/a_n21_3#"
+merge "rom_1bit_15/a_n21_3#" "rom_1bit_16/a_n21_3#"
+merge "rom_1bit_16/a_n21_3#" "wl7"
+merge "rom_1bit_4/a_n21_3#" "rom_0bit_0/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_0bit_0/a_n21_3#" "rom_1bit_5/a_n21_3#"
+merge "rom_1bit_5/a_n21_3#" "rom_0bit_1/a_n21_3#"
+merge "rom_0bit_1/a_n21_3#" "wl1"
+merge "rom_0bit_5/a_n21_3#" "rom_0bit_6/a_n21_3#" -1518 0 0 0 0 -2 -18 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rom_0bit_6/a_n21_3#" "rom_0bit_7/a_n21_3#"
+merge "rom_0bit_7/a_n21_3#" "rom_1bit_11/a_n21_3#"
+merge "rom_1bit_11/a_n21_3#" "wl4"

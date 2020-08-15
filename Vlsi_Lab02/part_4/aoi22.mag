@@ -1,0 +1,114 @@
+magic
+tech scmos
+timestamp 1573046612
+<< rotate >>
+rect 7 20 9 22
+rect 7 3 9 15
+rect 15 3 19 13
+<< pwell >>
+rect -6 -36 40 -20
+<< nwell >>
+rect -6 -1 40 28
+<< polysilicon >>
+rect 1 13 3 15
+rect 11 13 13 15
+rect 21 13 23 15
+rect 31 13 33 15
+rect 1 -23 3 3
+rect 11 -23 13 3
+rect 21 -23 23 3
+rect 31 -23 33 3
+rect 1 -29 3 -27
+rect 11 -29 13 -27
+rect 21 -29 23 -27
+rect 31 -29 33 -27
+<< ndiffusion >>
+rect 0 -27 1 -23
+rect 3 -27 11 -23
+rect 13 -27 15 -23
+rect 19 -27 21 -23
+rect 23 -27 31 -23
+rect 33 -27 34 -23
+<< pdiffusion >>
+rect 0 3 1 13
+rect 3 3 5 13
+rect 9 3 11 13
+rect 13 3 15 13
+rect 19 3 21 13
+rect 23 3 25 13
+rect 29 3 31 13
+rect 33 3 34 13
+<< metal1 >>
+rect -1 23 4 27
+rect 8 23 14 27
+rect 18 23 24 27
+rect 28 23 34 27
+rect 38 23 39 27
+rect 5 13 9 23
+rect 15 16 38 20
+rect 15 13 19 16
+rect 34 13 38 16
+rect -4 0 0 3
+rect 15 0 19 3
+rect -4 -4 19 0
+rect -4 -13 -3 -9
+rect 6 -13 7 -9
+rect 16 -13 17 -9
+rect 25 -16 29 3
+rect 37 -13 38 -9
+rect -4 -20 39 -16
+rect -4 -23 0 -20
+rect 34 -23 38 -20
+rect 15 -31 19 -27
+rect -5 -35 -4 -31
+rect 0 -35 5 -31
+rect 9 -35 15 -31
+rect 19 -35 25 -31
+rect 29 -35 34 -31
+rect 38 -35 39 -31
+<< ntransistor >>
+rect 1 -27 3 -23
+rect 11 -27 13 -23
+rect 21 -27 23 -23
+rect 31 -27 33 -23
+<< ptransistor >>
+rect 1 3 3 13
+rect 11 3 13 13
+rect 21 3 23 13
+rect 31 3 33 13
+<< polycontact >>
+rect -3 -13 1 -9
+rect 7 -13 11 -9
+rect 17 -13 21 -9
+rect 33 -13 37 -9
+<< ndcontact >>
+rect -4 -27 0 -23
+rect 15 -27 19 -23
+rect 34 -27 38 -23
+<< pdcontact >>
+rect -4 3 0 13
+rect 5 3 9 13
+rect 15 3 19 13
+rect 25 3 29 13
+rect 34 3 38 13
+<< psubstratepcontact >>
+rect -4 -35 0 -31
+rect 5 -35 9 -31
+rect 15 -35 19 -31
+rect 25 -35 29 -31
+rect 34 -35 38 -31
+<< nsubstratencontact >>
+rect -5 23 -1 27
+rect 4 23 8 27
+rect 14 23 18 27
+rect 24 23 28 27
+rect 34 23 38 27
+<< labels >>
+rlabel metal1 39 25 39 25 6 Vdd!
+rlabel metal1 -4 -13 -4 -9 3 A
+rlabel metal1 6 -13 6 -9 1 C
+rlabel metal1 16 -13 16 -9 1 D
+rlabel metal1 38 -13 38 -9 7 B
+rlabel metal1 39 -20 39 -16 7 Out
+rlabel metal1 39 -33 39 -33 8 Gnd!
+<< end >>

@@ -1,0 +1,77 @@
+* SPICE3 file created from full_adder.ext - technology: scmos
+
+M1000 vdd b a_0_5# vdd CMOSP w=30u l=2u
++  ad=860p pd=322u as=540p ps=216u
+M1001 a_0_5# a vdd vdd CMOSP w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_17_n38# cin a_0_5# vdd CMOSP w=30u l=2u
++  ad=240p pd=76u as=0p ps=0u
+M1003 a_37_5# b a_17_n38# vdd CMOSP w=30u l=2u
++  ad=240p pd=76u as=0p ps=0u
+M1004 a_0_5# a a_37_5# vdd CMOSP w=30u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 vdd b a_56_0# vdd CMOSP w=40u l=2u
++  ad=0p pd=0u as=840p ps=282u
+M1006 a_56_0# cin vdd vdd CMOSP w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 a_83_0# a a_56_0# vdd CMOSP w=40u l=2u
++  ad=320p pd=96u as=0p ps=0u
+M1008 a_93_0# b a_83_0# vdd CMOSP w=40u l=2u
++  ad=320p pd=96u as=0p ps=0u
+M1009 a_103_0# cin a_93_0# vdd CMOSP w=40u l=2u
++  ad=320p pd=96u as=0p ps=0u
+M1010 a_56_0# a_17_n38# a_103_0# vdd CMOSP w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 vdd a a_56_0# vdd CMOSP w=40u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 sout a_103_0# vdd vdd CMOSP w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1013 sout a_103_0# gnd Gnd CMOSN w=4u l=2u
++  ad=20p pd=18u as=336p ps=174u
+M1014 cout a_17_n38# vdd w_141_n26# CMOSP w=10u l=2u
++  ad=50p pd=30u as=0p ps=0u
+M1015 a_7_n38# b gnd gnd CMOSN w=8u l=2u
++  ad=64p pd=32u as=0p ps=0u
+M1016 a_17_n38# a a_7_n38# gnd CMOSN w=8u l=2u
++  ad=64p pd=32u as=0p ps=0u
+M1017 a_27_n38# cin a_17_n38# gnd CMOSN w=8u l=2u
++  ad=104p pd=58u as=0p ps=0u
+M1018 gnd b a_27_n38# gnd CMOSN w=8u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1019 a_27_n38# a gnd gnd CMOSN w=8u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1020 a_63_n42# b a_56_n42# gnd CMOSN w=12u l=2u
++  ad=96p pd=40u as=120p ps=68u
+M1021 gnd cin a_63_n42# gnd CMOSN w=12u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1022 a_83_n42# a gnd gnd CMOSN w=12u l=2u
++  ad=192p pd=80u as=0p ps=0u
+M1023 gnd b a_83_n42# gnd CMOSN w=12u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1024 a_83_n42# cin gnd gnd CMOSN w=12u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1025 a_103_0# a_17_n38# a_83_n42# gnd CMOSN w=12u l=2u
++  ad=96p pd=40u as=0p ps=0u
+M1026 a_56_n42# a a_103_0# gnd CMOSN w=12u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1027 cout a_17_n38# gnd gnd CMOSN w=4u l=2u
++  ad=20p pd=18u as=0p ps=0u
+C0 vdd a_17_n38# 8.6fF
+C1 vdd a_56_0# 6.7fF
+C2 vdd a_0_5# 5.7fF
+C3 vdd a_103_0# 7.9fF
+C4 vdd b 39.6fF
+C5 vdd a 24.0fF
+C6 a_56_n42# a_83_n42# 3.6fF
+C7 vdd cin 16.0fF
+C8 a_83_n42# gnd! 4.9fF
+C9 a_56_n42# gnd! 4.5fF
+C10 a_27_n38# gnd! 5.1fF
+C11 cout gnd! 5.8fF
+C12 sout gnd! 3.6fF
+C13 a_103_0# gnd! 13.9fF
+C14 a_17_n38# gnd! 29.0fF
+C15 cin gnd! 24.7fF
+C16 a gnd! 46.1fF
+C17 b gnd! 34.0fF
+C18 vdd gnd! 10.5fF

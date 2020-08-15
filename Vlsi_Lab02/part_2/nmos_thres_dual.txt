@@ -1,0 +1,33 @@
+*NMOS voltage threshold
+.INCLUDE "../MOSIS_025m.txt"
+
+M1 out2 g1 out1 out1 CMOSN L=2u W=3u
+M2 d g2 out2 out2 CMOSN L=2u W=3u
+C1 out1 0 0.1p
+
+Vgs2 g2 0 DC 2.5
+Vgs1 g1 0 DC 2.5
+Vdd d 0 DC 2.5
+
+.ic  V(out1)=0 V(out2)=0 
+.tran 0.1ns 100ns
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+*run, plot and save
+run
+plot out1 out2 d
+hardcopy nmos_thres_dual.ps out1 out2 d
+
+.endc
+
+.measure dc temp param=deriv(out)
+*Measurements of threshold voltages
+.meas tran vt_total find par('v(d)-v(out1)') at=5e-8
+
+.end

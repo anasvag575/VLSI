@@ -1,0 +1,27 @@
+* SPICE3 file created from maj.ext - technology: scmos
+
+M1000 a_3_2# B Vdd Vdd CMOSP w=15u l=2u
++  ad=240p pd=92u as=150p ps=80u
+M1001 Out A a_3_2# Vdd CMOSP w=15u l=2u
++  ad=120p pd=46u as=0p ps=0u
+M1002 a_3_2# C Out Vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1003 a_33_2# C a_3_2# Vdd CMOSP w=15u l=2u
++  ad=120p pd=46u as=0p ps=0u
+M1004 Vdd A a_33_2# Vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 Out B a_n4_n27# Gnd CMOSN w=4u l=2u
++  ad=32p pd=24u as=52p ps=42u
+M1006 a_13_n27# A Out Gnd CMOSN w=4u l=2u
++  ad=32p pd=24u as=0p ps=0u
+M1007 Gnd C a_13_n27# Gnd CMOSN w=4u l=2u
++  ad=52p pd=42u as=0p ps=0u
+M1008 a_n4_n27# C Gnd Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1009 Gnd A a_n4_n27# Gnd CMOSN w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+C0 Vdd a_3_2# 4.5fF
+C1 a_n4_n27# gnd! 3.0fF
+C2 Out gnd! 10.5fF
+C3 Gnd gnd! 8.3fF
+C4 Vdd gnd! 21.8fF

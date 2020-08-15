@@ -1,0 +1,45 @@
+*Inverter sim file
+.INCLUDE "MOSIS_025m.txt"
+.INCLUDE "Inverter_model.spice"
+
+V1 vdd 0 DC 2.5
+*Vgnd gnd 0 DC 0
+V2 in 0 PULSE (2.5 0 2n 0.25n 0.25n 8n 16n)
+
+.TRAN 1p 26n
+.PROBE V(in) V(out)
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+hardcopy temp.ps out in
+.endc
+
+*Time Measurements
+.measure tran pulserise 
++trig v(in) val=2.25 CROSS=1 
++targ v(in) val=0.25 CROSS=1
+
+.measure tran Tplh 
++trig v(in) val=1.25 CROSS=1 
++targ v(out) val=1.25 CROSS=1
+
+.measure tran Tphl 
++trig v(in) val=1.25 cross=2
++targ v(out) val=1.25 cross=2
+
+.measure tran RiseTime 
++trig v(out) val=0.25 cross=1 
++targ v(out) val=2.25 cross=1
+
+.measure tran FallTime 
++trig v(out) val=2.25 cross=2 
++targ v(out) val=0.25 cross=2
+
+*Initial conditions
+.ic v(in)=2.5 v(out)=0
+
+.end

@@ -1,0 +1,177 @@
+* SPICE3 file created from decoder_8bit.ext - technology: scmos
+
+M1000 inverter_2/out c vdd vdd CMOSP w=30u l=2u
++  ad=150p pd=70u as=2690p ps=1250u
+M1001 inverter_2/out c gnd gnd CMOSN w=12u l=2u
++  ad=60p pd=34u as=1140p ps=646u
+M1002 vdd a decoder_1bit_7/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1003 decoder_1bit_7/a_0_0# b vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1004 vdd c decoder_1bit_7/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 out7 decoder_1bit_7/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1006 decoder_1bit_7/a_7_n57# a gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1007 decoder_1bit_7/a_17_n57# b decoder_1bit_7/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1008 decoder_1bit_7/a_0_0# c decoder_1bit_7/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1009 out7 decoder_1bit_7/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1010 vdd a decoder_1bit_6/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1011 decoder_1bit_6/a_0_0# b vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 vdd inverter_2/out decoder_1bit_6/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1013 out6 decoder_1bit_6/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1014 decoder_1bit_6/a_7_n57# a gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1015 decoder_1bit_6/a_17_n57# b decoder_1bit_6/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1016 decoder_1bit_6/a_0_0# inverter_2/out decoder_1bit_6/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1017 out6 decoder_1bit_6/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1018 vdd a decoder_1bit_5/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1019 decoder_1bit_5/a_0_0# inverter_1/out vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1020 vdd c decoder_1bit_5/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1021 out5 decoder_1bit_5/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1022 decoder_1bit_5/a_7_n57# a gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1023 decoder_1bit_5/a_17_n57# inverter_1/out decoder_1bit_5/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1024 decoder_1bit_5/a_0_0# c decoder_1bit_5/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1025 out5 decoder_1bit_5/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1026 vdd a decoder_1bit_4/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1027 decoder_1bit_4/a_0_0# inverter_1/out vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1028 vdd inverter_2/out decoder_1bit_4/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1029 out4 decoder_1bit_4/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1030 decoder_1bit_4/a_7_n57# a gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1031 decoder_1bit_4/a_17_n57# inverter_1/out decoder_1bit_4/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1032 decoder_1bit_4/a_0_0# inverter_2/out decoder_1bit_4/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1033 out4 decoder_1bit_4/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1034 vdd inverter_0/out decoder_1bit_3/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1035 decoder_1bit_3/a_0_0# b vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1036 vdd c decoder_1bit_3/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1037 out3 decoder_1bit_3/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1038 decoder_1bit_3/a_7_n57# inverter_0/out gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1039 decoder_1bit_3/a_17_n57# b decoder_1bit_3/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1040 decoder_1bit_3/a_0_0# c decoder_1bit_3/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1041 out3 decoder_1bit_3/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1042 vdd inverter_0/out decoder_1bit_2/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1043 decoder_1bit_2/a_0_0# b vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1044 vdd inverter_2/out decoder_1bit_2/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1045 out2 decoder_1bit_2/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1046 decoder_1bit_2/a_7_n57# inverter_0/out gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1047 decoder_1bit_2/a_17_n57# b decoder_1bit_2/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1048 decoder_1bit_2/a_0_0# inverter_2/out decoder_1bit_2/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1049 out2 decoder_1bit_2/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1050 vdd inverter_0/out decoder_1bit_1/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1051 decoder_1bit_1/a_0_0# inverter_1/out vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1052 vdd c decoder_1bit_1/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1053 out1 decoder_1bit_1/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1054 decoder_1bit_1/a_7_n57# inverter_0/out gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1055 decoder_1bit_1/a_17_n57# inverter_1/out decoder_1bit_1/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1056 decoder_1bit_1/a_0_0# c decoder_1bit_1/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1057 out1 decoder_1bit_1/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1058 vdd inverter_0/out decoder_1bit_0/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=180p ps=84u
+M1059 decoder_1bit_0/a_0_0# inverter_1/out vdd vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1060 vdd inverter_2/out decoder_1bit_0/a_0_0# vdd CMOSP w=15u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1061 out0 decoder_1bit_0/a_0_0# vdd vdd CMOSP w=17u l=2u
++  ad=85p pd=44u as=0p ps=0u
+M1062 decoder_1bit_0/a_7_n57# inverter_0/out gnd gnd CMOSN w=18u l=2u
++  ad=144p pd=52u as=0p ps=0u
+M1063 decoder_1bit_0/a_17_n57# inverter_1/out decoder_1bit_0/a_7_n57# gnd CMOSN w=18u l=2u
++  ad=126p pd=50u as=0p ps=0u
+M1064 decoder_1bit_0/a_0_0# inverter_2/out decoder_1bit_0/a_17_n57# gnd CMOSN w=18u l=2u
++  ad=90p pd=46u as=0p ps=0u
+M1065 out0 decoder_1bit_0/a_0_0# gnd gnd CMOSN w=6u l=2u
++  ad=30p pd=22u as=0p ps=0u
+M1066 inverter_1/out b vdd vdd CMOSP w=30u l=2u
++  ad=150p pd=70u as=0p ps=0u
+M1067 inverter_1/out b gnd gnd CMOSN w=12u l=2u
++  ad=60p pd=34u as=0p ps=0u
+M1068 inverter_0/out a vdd vdd CMOSP w=30u l=2u
++  ad=150p pd=70u as=0p ps=0u
+M1069 inverter_0/out a gnd gnd CMOSN w=12u l=2u
++  ad=60p pd=34u as=0p ps=0u
+C0 vdd a 6.0fF
+C1 vdd inverter_2/out 7.8fF
+C2 inverter_0/out inverter_2/out 3.4fF
+C3 inverter_0/out vdd 8.6fF
+C4 b c 3.4fF
+C5 b a 3.4fF
+C6 vdd b 6.0fF
+C7 inverter_1/out inverter_2/out 3.4fF
+C8 vdd inverter_1/out 8.6fF
+C9 inverter_0/out inverter_1/out 3.4fF
+C10 c a 3.4fF
+C11 vdd c 6.0fF
+C12 vdd gnd! 159.4fF
+C13 out0 gnd! 9.6fF
+C14 decoder_1bit_0/a_0_0# gnd! 26.9fF
+C15 out1 gnd! 9.6fF
+C16 decoder_1bit_1/a_0_0# gnd! 26.9fF
+C17 out2 gnd! 9.6fF
+C18 decoder_1bit_2/a_0_0# gnd! 26.9fF
+C19 out3 gnd! 9.6fF
+C20 decoder_1bit_3/a_0_0# gnd! 26.9fF
+C21 inverter_0/out gnd! 204.4fF
+C22 out4 gnd! 9.6fF
+C23 decoder_1bit_4/a_0_0# gnd! 26.9fF
+C24 out5 gnd! 9.6fF
+C25 decoder_1bit_5/a_0_0# gnd! 26.9fF
+C26 inverter_1/out gnd! 249.6fF
+C27 out6 gnd! 9.6fF
+C28 decoder_1bit_6/a_0_0# gnd! 26.9fF
+C29 inverter_2/out gnd! 296.1fF
+C30 out7 gnd! 9.6fF
+C31 decoder_1bit_7/a_0_0# gnd! 26.9fF
+C32 c gnd! 338.9fF
+C33 b gnd! 373.8fF
+C34 a gnd! 399.1fF

@@ -1,0 +1,31 @@
+*Decoder 1bit cell
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "rom_full.spice"
+
+.GLOBAL vdd
+
+Vgnd gnd! 0 DC 0
+V1 vdd 0 DC 2.5
+V2 wl0 0 DC 0
+V3 wl1 0 DC 0
+V4 wl2 0 DC 0 
+V5 wl3 0 DC 0
+V6 wl4 0 DC 0
+V7 wl5 0 DC 0
+V8 wl6 0 DC 0
+V9 wl7 0 PULSE (2.5 0 0.5n 0.2n 0.2n 80n 160n)
+
+.TRAN 1n 400n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+run
+
+.endc
+
+.end

@@ -1,0 +1,55 @@
+*Inverter transfer function
+.INCLUDE "../MOSIS_025m.txt"
+
+*17u for symmetrical Noise in PMOS
+M1 out g s s CMOSP L=2u W=17u   
+M2 out g 0 0 CMOSN L=2u W=3u
+
+Vin g 0 DC 0
+Vdd s 0 DC 2.5
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+
+foreach i 0.7 1.2 1.8 2.5
+  
+  alter Vdd=$i
+  DC Vin 0 $i 0.01
+  plot out g title 'Vdd=$i'
+  run
+  
+  let deriv_out=deriv(out)
+  *Measurements in Characteristic voltages
+  meas dc vout_high find out when deriv_out=-1 CROSS=1
+  meas dc vout_low find out when deriv_out=-1 CROSS=2
+  meas dc vin_high when deriv_out=-1 CROSS=2
+  meas dc vin_low when deriv_out=-1 CROSS=1
+  meas dc vin_mid when out=v(g) CROSS=1
+
+  *printing Noise Margins (vout_high=2.5 vout_low=0)
+  let NoiseMar_high = $i - Vin_high   
+  let NoiseMar_low = Vin_low - 0 
+
+  *Power and current
+  let avg_cur=mean(-i(vdd))
+  let avg_power=mean(-i(vdd)*$i)
+
+  *printing results
+  if $i = 0.7
+    echo 'Results for Vdd = $i' > results
+    print avg_cur avg_power NoiseMar_low NoiseMar_high >> results
+    echo '' >> results
+  else  
+    echo 'Results for Vdd = $i' >> results
+    print avg_cur avg_power NoiseMar_low NoiseMar_high >> results
+    echo '' >> results
+  end
+
+end
+.endc
+
+.end

@@ -1,0 +1,22 @@
+*MAj sim file
+.INCLUDE "../MOSIS_025m.txt"
+.INCLUDE "maj.spice"
+
+V1 vdd 0 DC 2.5
+Vgnd gnd! 0 DC 0
+V2 A 0 DC 2.5
+V3 B 0 PULSE (2.5 0 2n 0.25n 0.25n 16n 32n)
+V4 C 0 PULSE (2.5 0 2n 0.25n 0.25n 16n 32n)
+
+.TRAN 1n 70n
+
+*Setting up environment 
+.control
+set hcopydevtype=postscript
+set hcopypscolor=true
+set color0=rgb:f/f/f
+set color1=rgb:0/0/0
+*hardcopy maj.ps 
+.endc
+
+.end
