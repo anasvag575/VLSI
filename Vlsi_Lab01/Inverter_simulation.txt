@@ -1,4 +1,6 @@
 *Inverter sim file
+*Perform a transient analysis of the inverter
+*we created
 .INCLUDE "MOSIS_025m.txt"
 .INCLUDE "Inverter_model.spice"
 

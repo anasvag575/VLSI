@@ -3,19 +3,19 @@
 
 .GLOBAL vdd
 
-*Inverter NODES Vin Vout
+*Inverter NODES |Vin Vout|
 .subckt inverter in out params: wnsize=3u wpsize=9u
 M1 out in vdd vdd CMOSP w=wpsize l=2u
 M2 out in 0 0 CMOSN w=wnsize l=2u
 .ends
 
-*Pass gate NODES en nen in out
+*Pass gate NODES |en nen in out|
 .subckt pass_gate en nen in out
 M1 out nen in vdd CMOSP w=18u l=2u
 M2 in en out 0 CMOSN w=6u l=2u
 .ends
 
-*Sram cell NODES in out
+*Sram cell NODES |in out|
 .subckt sram in out
 xin_s in out inverter params: wnsize=9u wpsize=27u
 xin_w out in inverter params: wnsize=3u wpsize=9u

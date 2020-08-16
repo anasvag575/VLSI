@@ -1,4 +1,4 @@
-*Current NMOS characteristics
+*Current PMOS characteristics
 .INCLUDE "../MOSIS_025m.txt"
 
 M1 d g s s CMOSP L=2u W=3u
