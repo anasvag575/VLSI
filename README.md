@@ -15,7 +15,8 @@ For the schematic and extraction of the netlist MAGIC was used (http://opencircu
 
 For the simulation of the netlist Ngspice was used (http://ngspice.sourceforge.net/)
 
-Every folder containts the exercise set and the necessary files for it to work
+Every folder containts the exercise set and the necessary files for it to work and a report which 
+explains further the steps and the findings of each exercise
 
 ### Exercise set 1
 In exercise 1 we have to design an inverter in MAGIC with the following specifications:
