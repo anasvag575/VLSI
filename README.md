@@ -61,5 +61,5 @@ In exercise 1 we have designed a 3 to 8 decoder:
 
 In exercise 2 we designed a 4-bit NOR ROM which stores 8 words:
 - Design the 1-bit cells in MAGIC
-- Design using the previous cells the ROM
+- Design using the previous cells, the full ROM
 - Simulate it using Ngpsice
