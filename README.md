@@ -11,11 +11,11 @@ The technology used is SCMOS 0.25um (meaning 1 by 1 um grid size)
 
 And most of ngspice scripts are LEVEL 3 spice simulations
 
-For the schematic and extraction of the netlist MAGIC was used (http://opencircuitdesign.com/magic/)
+For the schematic and extraction of the netlist, MAGIC was used (http://opencircuitdesign.com/magic/)
 
-For the simulation of the netlist Ngspice was used (http://ngspice.sourceforge.net/)
+For the simulation of the netlist Ngspice, was used (http://ngspice.sourceforge.net/)
 
-Every folder containts the exercise set and the necessary files for it to work and a report which 
+Every folder contains the exercise set and the necessary files for it to work and a report which 
 explains further the steps and the findings of each exercise
 
 ### Exercise set 1
